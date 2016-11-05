@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="jquery.min.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</head>
+	<body style="font-size:0.32rem">
+		<h1>微信自定义分享测试</h1>
+		<script>
+			function jsonpcallback(res){
+				//console.log(res);
+			}
+			var script = document.createElement("script");
+			script.src = "/wechat/jssdk?callback=jsonpcallback";
+			document.querySelector("body").appendChild(script);
+		</script>
+		<script>
+			$.post("/wechat/jssdk",{},function(data){
+				//console.log(data);
+			},"json");
+		</script>
+		<button id="getNetworkType">获取网络状态</button>
+		<br />
+		<button id="getLocation">获取当前地址</button>
+		<script src="test.js"></script>
+	</body>
+</html>

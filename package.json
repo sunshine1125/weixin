@@ -1,0 +1,22 @@
+{
+  "name": "group5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "swig": "^1.4.2",
+    "wechat-api": "^1.31.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:sunshine1125/group5.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
